@@ -1,6 +1,6 @@
 # Health Monitoring Dashboard
 
-This project is a web portal for bariatric surgery patients that integrates health metrics from wearable devices like the Apple Watch. The web app displays data such as weight, BMI, exercise progress, daily caloric intake, and more through a user-friendly dashboard. It also includes a companion iOS app prototype that utilizes HealthKit to collect wearable data, with a Node.js backend and SQL database to store and serve the data.
+This project is a web portal for bariatric surgery patients that integrates health metrics. The web app displays data such as weight, BMI, exercise progress, daily caloric intake, and more through a user-friendly dashboard. It also includes a Node.js backend and SQLite database to store and serve the data.
 
 ## Table of Contents
 
@@ -19,7 +19,6 @@ This project is a web portal for bariatric surgery patients that integrates heal
 - **Health Data Integration:** Displays key metrics such as weight, BMI, exercise duration, daily caloric intake, and calories burned over time.
 - **Backend API:** Node.js/Express-based API to fetch and update health data as well as Flask to access a calorie burning API.
 - **SQL Database:** Stores user data and health metrics.
-- **Companion iOS App Prototype:** Uses HealthKit for wearable data integration (prototype).
 - **Agile Development:** Incremental feature development with a clear branching strategy.
 
 
@@ -38,18 +37,6 @@ This project is a web portal for bariatric surgery patients that integrates heal
     npm install
     
 
-3. **Set Up the Database:**
-
-    - Ensure you have a SQL database server running.
-    - Run the SQL scripts to set up the schema and seed data:
-      bash
-      mysql -u your_username -p your_database < db/schema.sql
-      mysql -u your_username -p your_database < db/seed.sql
-      
-
-4. **Configure Environment Variables:**
-
-    Create a `.env` file (if needed) to store your database connection strings and other configuration details.
 
 ## Usage
 
