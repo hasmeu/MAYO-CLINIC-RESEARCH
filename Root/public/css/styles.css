@@ -1,0 +1,218 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Utility Classes */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background: #ffe600; /* Bright yellow background for header */
+  border-bottom: 2px solid #d40000; /* Red underline */
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.logo img {
+  height: 40px;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+}
+.main-nav ul li {
+  margin-left: 25px;
+}
+.main-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.main-nav ul li a:hover {
+  color: #0070c9; /* Blue on hover */
+}
+
+/* Hero Section */
+.hero {
+  background: url('../assets/images/hero-bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.cta-button {
+  background-color: #0070c9; /* Blue call-to-action */
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #005fa3;
+}
+
+/* Features Section */
+.features {
+  padding: 60px 0;
+  text-align: center;
+}
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #d40000;  /* Red header */
+}
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.feature {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature img {
+  width: 100%;
+  display: block;
+}
+.feature h3 {
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+  color: #0070c9; /* Blue titles */
+}
+.feature p {
+  padding: 0 20px 20px;
+  color: #666;
+}
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Recommended Workout Section */
+.workouts {
+  padding: 60px 0;
+  background: #ffd700; /* Vivid yellow background */
+  text-align: center;
+  color: #333;
+}
+.workouts h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #d40000; /* Use red for the header text */
+}
+.workout-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border: 2px solid #0070c9; /* Blue border */
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.workout-card img {
+  flex: 1 1 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.workout-info {
+  flex: 1 1 400px;
+  padding: 20px 30px;
+  text-align: left;
+  background: #f7f7f7;
+}
+.workout-info h3 {
+  font-size: 1.75rem;
+  color: #d40000; /* Red title */
+  margin-bottom: 15px;
+}
+.workout-info p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+.workout-button {
+  background-color: #0070c9; /* Blue button */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+.workout-button:hover {
+  background-color: #005fa3;
+}
+
+/* Footer */
+.footer {
+  background: #0070c9;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer p {
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .main-nav ul li {
+    margin-left: 15px;
+  }
+  .workout-card {
+    flex-direction: column;
+  }
+}

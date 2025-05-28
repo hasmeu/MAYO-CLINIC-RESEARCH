@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  form {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .mood-entry {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+  }
+
+  
+  #journalInput {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .journal-entry {
+    background: #fff;
+    border-left: 4px solid #4BC0C0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  }
+  
+  .timestamp {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8rem;
+    color: #888;
+  }
+
+
+  #graphContainer {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  
+  #graphContainer canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+  }

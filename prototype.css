@@ -1,0 +1,117 @@
+/* fonts
+    - Georgia: headings, titles, etc
+    - Verdana: body
+    - Times New Roman: anything else
+*/
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background: radial-gradient(110% 160% at -5% 120%,
+        #1371d5, #000b6b);
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    justify-content: center;
+}
+
+.main p, h1
+{
+    margin: 15px;
+}
+.reminders
+{
+    flex-direction: column;
+    border: solid 1px gray;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    margin: 15px;
+    text-align: left;
+    z-index: 1;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.reminders p 
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.gridcontainer
+{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    gap: 10px;
+    z-index: 1;
+}
+
+.gridcontainer div
+{
+    display: flex;
+    padding: 10px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.gridcontainer div a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.gridcontainer div a:hover
+{
+    color: #1371d5;
+}
+
+@media screen and (max-width: 600px) 
+{
+
+    .main 
+    {
+        padding: 5px;
+    }
+
+    .reminders
+    {
+        font-size: 14px;
+    }
+
+    .gridcontainer
+    {
+        grid-template-columns: 1fr;
+    }
+    
+}
+

@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "dashboard.css">
+        <link rel = "stylesheet" href = "navbar.css">
+        <link rel = "stylesheet" href = "consistency_styles.css">
+    </head>
+
+    <body>
+    <div class = "topnav">
+
+        <!-- potential logo spot in the future-->
+        <a href = "webpage-prototype.html">Bariatric Patient Project</a>
+
+        <div class = "topnav-right">    
+        <a href = alerts.html>Alerts</a>
+        <a href = profile.html>Profile</a>
+        </div>
+    </div>
+
+    <div class = "weight-dashboard">
+
+    <div class = "update-weight-container">
+    <form class = "weight-tracker">
+        <label for = "current-weight">Current Weight:</label>
+        <input type = "number" id = "current-weight" name = "current-weight"></input>
+
+        <label for = "Current Weight Goal">Current Weight Goal: </label>
+        <input type = "number" id = "updated-goal" name = "updated-goal">
+
+        <label for = "updatedBMI">Updated BMI:</label>
+        <span id = "updatedBMI" name = "updatedBMI"></span>
+
+    <div class = "buttoncontainer">
+        <button type = "submit" id = "button" >Update</button>
+    </div>
+</form>
+    
+    </div>
+
+    <div class = "weight-charts">
+        <!--weight and bmi related charts-->
+      
+        <div class="container chart-container">
+          <h2>Weight Progress Over Time</h2>
+          <canvas id="weightChart" width="400" height="200"></canvas>
+        </div>
+      <!--second row-->
+      <div class="dashboard-row">
+        
+        <div class="container chart-container">
+          <h2>Exercise Consistency</h2>
+          <canvas id="consistencyChart" width="400" height="200"></canvas>
+        
+        </div>
+      
+        <div class="container chart-container">
+          <h2>Emotional Well-Being</h2>
+          <canvas id="emotionalChart" width="400" height="200"></canvas>
+        </div>
+      </div>
+      
+      
+    </div>
+    </div>
+
+    <div class = "dashboard-container">
+        <div class = "header">
+            <h2>Dashboard</h2>
+        </div>
+
+        <div class = "exercise">
+            <p>Exercise</p>
+            <element class = "icon">
+                <div><i class = 'fa-solid fa-person-running'></i></div>
+            </element>
+
+            <div class = "dash-vals">
+                <p><span id = "exercise-minutes">0</span> / 60 minutes</p>
+            </div>
+
+            <div class = "dash-links">
+                <button>
+                    <a href = "exercise.html">Update</a>
+                </button>
+            </div>
+        </div>
+
+        <div class = "weight">
+            <p>Weight</p>
+            <element class = "icon">
+                <div><i class="fa-solid fa-weight-scale"></i></div>
+            </element>
+
+            <div class = "dash-vals">
+                <p><span id = "weight"></span> lbs</p>    
+            </div>
+
+            <div class = "dash-links">
+                <button>
+                    <a href>Update</a>
+                </button>
+            </div>
+        </div>
+
+        <div class = "mood">
+            <p>Mood</p>
+            <element class = "icon">
+                <div><i class="fa-solid fa-face-smile"></i></div>
+            </element>
+
+            <div class = "dash-vals">
+            <p><span id = "mood">values</span></p>
+            </div>
+
+            <div class = "dash-links">
+                <button>
+                    <a href>Update</a>
+                </button>
+            </div>
+        </div>
+
+        <div class = "calories">
+            <p>Calories<p>
+                <div class = "icon">
+                <div><i class="fa-solid fa-chart-pie"></i></div>
+                </div>
+
+                <div class = "dash-vals">
+                    <p><span id = "calories">0</span> calories</p>
+                </div>
+
+                <div class = "dash-links">
+                    <button>
+                        <a href>Update</a>
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <!--Graphs here-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src = "weight_chart.js"></script>
+    <script src = "emotional_consistency.js"></script>
+    <script src = "profile.js"></script>
+    <script src = "dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body 
+{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.signup-container
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 40%;
+    height: 75%;
+    border: 1px lightgray;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+h1
+{
+    font-family: 32px Georgia, serif;
+    text-align: center;
+    margin-bottom: 16px
+
+}
+
+.input-group
+{
+    display: flex;
+    text-align: left;
+    width: 85%;
+    justify-content: space-between;
+    font-family: 20px 'Times New Roman', Times, serif;
+}
+
+.input-group label
+{
+    white-space: nowrap; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="appleID"],
+input[type="phonenumber"],
+input[type="password"] 
+{
+    padding: 12px 15px;
+    width: 100%;  
+    margin-bottom: 10px;
+}
+
+button
+{
+    font-family: 20px 'Times New Roman', Times, serif;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 1.5rem;
+    background-color: royalblue;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+
+button:hover
+{
+    opacity: 0.8;
+}

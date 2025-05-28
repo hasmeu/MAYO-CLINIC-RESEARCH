@@ -1,0 +1,108 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background: radial-gradient(100% 100% at 50% 50%,
+    #1371d5, #000b6b);
+}
+
+.tracker
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.tracker > form
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.tracker > form label
+{
+    display: grid;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: left;
+    justify-self: start;
+}
+
+.tracker > form input
+{
+    justify-self: start;
+    width: auto;
+}
+
+.tracker > form > button
+{
+    border-radius: 5px;
+    height: 80px;
+    width: 150px;
+    cursor: pointer;
+    justify-self: center;
+}
+.exercise-options
+{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, auto);
+    gap: 5px;
+    z-index: 1;
+}
+
+.exercise-options div
+{
+    display: flex;
+    border: solid 1px gray;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+    padding: 10px;
+}
+
+.exercise-options i > p
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+.exercise-options button
+{
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    justify-content: center;
+}
+
+.exercise-options button:hover
+{
+    background-color: #abc;
+}
+.exercise-options button:focus
+{
+    background-color: #abc;
+}

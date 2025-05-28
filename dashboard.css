@@ -1,0 +1,152 @@
+body 
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.weight-dashboard
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    background: radial-gradient(110% 160% at -5% 120%,
+    #1371d5, #000b6b);
+    background-size: cover;
+    padding: 20px;
+}
+
+.update-weight-container, .weight-charts
+{
+    padding: 20px;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.update-weight 
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.update-weight-container > form
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.update-weight-container > form label
+{
+
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: large;
+    align-items: flex-start;
+}
+
+.update-weight-container > form > input
+{
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.buttoncontainer
+{
+    display: grid;
+    justify-content: center;
+    grid-column: 1 / span 2;
+}
+
+#button
+{
+    width: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d7d8e0;
+    cursor: pointer;
+    padding: 10px 20px;
+    min-width: 150px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.dashboard-container
+{
+    justify-self: center;
+    margin: 30px 10px 30px 10px;
+    border: 3px solid gray;
+    display: grid;
+    grid-template-areas:
+    'head head head head head'
+    'exercise weight mood calories calories'
+    'exercise weight mood calories calories'
+    'exercise weight mood calories calories'
+    'exercise weight mood calories calories';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.header
+{
+    grid-area: head;
+    border-bottom: 3px solid gray;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.exercise, .weight, .mood
+{
+    grid-area: exercise, weight, mood;
+    text-align: center;
+    padding: 0;
+    border-right: 2px solid gray;
+    height: 100%;
+}
+
+.calories
+{
+    grid-area: calories;
+    text-align: center;
+    padding: 0;
+}
+.icon > div
+{
+    border-top: 2px solid gray;
+    background-color: lightgray;
+    width: auto;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash-vals
+{
+    border-top: 1px solid gray;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash-links
+{
+    border-top: 1px solid gray;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+
+/* first thing in the <body></body> in each html file
+<nav class = "topnav">
+
+            <!-- potential logo spot in the future-->
+            <a href = "#">Bariatric Patient Project</a>
+
+            <ul class = "topnav-right">    
+            <a href = alerts.html>Alerts</a>
+            <a href = profile.html>Profile</a>
+
+            </ul>
+        </nav>
+*/
+
+*
+{
+    box-sizing: border-box;
+}
+
+.topnav a 
+{
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 0 16px;
+    font-size: 18px;
+}
+
+.topnav-right 
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100px;
+    
+}
+
+.topnav 
+{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.topnav-right a:hover
+{
+    color: #1371d5;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+    .topnav a 
+    {
+        display: block;
+        align-items: flex-start;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .topnav-right
+    {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        align-items: flex-start;
+        padding-left: 0;
+    }
+}

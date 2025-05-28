@@ -1,0 +1,15 @@
+{
+    "name": "group2research",
+    "version": "1.0.0",
+    "main": "server/app.js",
+    "scripts": {
+        "genparse": "node scripts/generate-parse-fixtures.js",
+        "snap": "tap",
+        "test": "tap",
+        "start": "node server/app.js"
+    },
+    "dependencies": {
+        "express": "^5.1.0",
+        "sqlite3": "^5.1.7"
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Forum</title>
+    <link rel="stylesheet" href="/css/social.css">
+    <script type="text/JavaScript" src="/js/social.js" defer></script>
+</head>
+<body>
+    <div class="forum-wrapper">
+        <h1>Patient Support Forum</h1>
+        <div class="forum-container">
+            <div class="post-form">
+                <h2>Create a Post</h2>
+                <input type="text" id="username" placeholder="Your name">
+                <input type="text" id="title" placeholder="Post title">
+                <textarea id="message" rows="4" placeholder="Your message..."></textarea>
+                <button onclick="addPost()">Post</button>
+            </div>
+            <div id="postList"></div>
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </div>
+</body>
+</html>

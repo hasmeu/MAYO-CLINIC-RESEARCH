@@ -1,0 +1,15 @@
+{
+  "name": "group2research",
+  "version": "1.0.0",
+  "description": "This project is a web portal for bariatric surgery patients that integrates health metrics from wearable devices like the Apple Watch. The web app displays data such as weight, BMI, exercise progress, daily caloric intake, and more through a user-friendly dashboard. It also includes a companion iOS app prototype that utilizes HealthKit to collect wearable data, with a Node.js backend and SQL database to store and serve the data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

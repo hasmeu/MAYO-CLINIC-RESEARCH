@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+  <html>
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel = "stylesheet" href= "css/nutrition.css">
+          <script type="text/JavaScript" src="js/nutrition.js" defer></script>
+          <title>Nutrition</title>
+      </head>
+      <body >
+        <nav class = "topnav">
+
+          <!-- potential logo spot in the future-->
+          <a href = "#">Bariatric Patient Project</a>
+
+          <ul class = "topnav-right">    
+          <a href = alerts.html>Alerts</a>
+          <a href = profile.html>Profile</a>
+          <a href = "webpage-prototype.html">Home</a>
+          
+          </ul>
+        </nav>
+          <div class="container">  
+              <div id="gridBox" class="grid"></div>
+              <h1>Nutrition Tracker</h1>
+              <h3 style="margin-top: 40px;">Meal Tracker</h3>
+              
+              <label for="infoSelect">Choose the meal of preference:</label>
+              <select id="infoSelect" onchange="switchMeal(this.selectedIndex)">
+                <option value="ex1">Steak</option>
+                <option value="ex2">Sushi</option>
+                <option value="ex3">Salad</option>
+              </select>
+                <h2>Enter a Meal</h2>
+                <form id="mealForm">
+                  <div class="grid">
+                    <label>Meal Name<br><input class="input-box" type="text" id="mealName" required></label>
+                    <label>Servings<br><input class="input-box" type="number" id="servings" min="0" step="0.1" required></label>
+                    <label>Calories<br><input class="input-box" type="number" id="calories" min="0" step="1" required></label>
+                    <label>Total Carbohydrate (g)<br><input class="input-box" type="text" id="Total_carbohydrate"></label>
+                    <label>Dietary Fiber (g)<br><input class="input-box" type="text" id="Dietary_fiber"></label>
+                    <label>Sodium (mg)<br><input class="input-box" type="text" id="Sodium"></label>
+                    <label>Saturated Fat (g)<br><input class="input-box" type="text" id="Saturated_fat"></label>
+                    <label>Total Fat (g)<br><input class="input-box" type="text" id="Total_fat"></label>
+                    <label>Trans Fat (g)<br><input class="input-box" type="text" id="Trans_fat"></label>
+                    <label>Cholesterol (mg)<br><input class="input-box" type="text" id="Cholesterol"></label>
+                    <label>Protein (g)<br><input class="input-box" type="text" id="Protein"></label>
+                    <label>Monounsaturated Fat (g)<br><input class="input-box" type="text" id="Monounsaturated_fat"></label>
+                    <label>Trace Calories<br><input class="input-box" type="text" id="Trace_Calories"></label>
+                    <label>Added Sugars (g)<br><input class="input-box" type="text" id="Added_sugars"></label>
+                    <label>Total Sugars (g)<br><input class="input-box" type="text" id="Total_sugars"></label>
+                  </div>
+                  <button type="submit" id="addMealBtn">Save Meal</button>
+                  <button type="submit" id="addLogBtn">Log Meal</button>
+                </form>
+              <div class="meal-nutrients" id="meal-nutrients"></div>        
+              <h3 style="margin-top: 40px;">Meal Log</h3>
+
+
+              <!--Need to fix meal logger, as it doesn't save any logged meals.-->
+              <div id="meal-log">
+                <table id="mealTable" border="1">
+                  <thead>
+                    <tr>
+                      <th>Meal Name</th>
+                      <th>Servings</th>
+                      <th>Calories</th>
+                      <th>Total Carb</th>
+                      <th>Dietary Fiber</th>
+                      <th>Sodium</th>
+                      <th>Saturated Fat</th>
+                      <th>Total Fat</th>
+                      <th>Trans Fat</th>
+                      <th>Cholesterol</th>
+                      <th>Protein</th>
+                      <th>Monounsaturated Fat</th>
+                      <th>Trace Calories</th>
+                      <th>Added Sugars</th>
+                      <th>Total Sugars</th>
+                    </tr>
+                  </thead>
+                  <tbody id="mealTableBody"></tbody>
+                  <tfoot>
+                    <tr id="totalRow">
+                      <td>Total</td>
+                      <td id="totalServings">0</td>
+                      <td id="totalCalories">0</td>
+                      <td id="totalCarbs">0</td>
+                      <td id="totalFiber">0</td>
+                      <td id="totalSodium">0</td>
+                      <td id="totalSatFat">0</td>
+                      <td id="totalFat">0</td>
+                      <td id="totalTransFat">0</td>
+                      <td id="totalCholesterol">0</td>
+                      <td id="totalProtein">0</td>
+                      <td id="totalMonoFat">0</td>
+                      <td id="totalTraceCals">0</td>
+                      <td id="totalAddedSugars">0</td>
+                      <td id="totalSugars">0</td>
+                    </tr>
+                  </tfoot>
+
+
+                </table>
+              </div>
+
+              
+              <label for="dietSelect"><b>Select Diet:</b></label>
+              <select id="dietSelect">
+                  <option value="default">Standard</option>
+                  <option value="lowCarb">Low Carb</option>
+                  <option value="highProtein">High Protein</option>
+                  <option value="lowSodium">Low Sodium</option>
+              </select>
+
+              <p>More recipes!</p>
+              <a href="pdf/bariatric-surgery-recipes.pdf">Open PDF</a>
+      </body>
+  </html>

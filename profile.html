@@ -1,0 +1,78 @@
+<html>
+<head>
+    <link rel = "stylesheet" href = "profile.css">
+    <link rel = "stylesheet" href = "navbar.css">
+</head>
+
+<body>
+    <div class = "topnav">
+
+        <!-- potential logo spot in the future-->
+        <a href = "webpage-prototype.html">Bariatric Patient Project</a>
+
+        <div class = "topnav-right">    
+        <a href = alerts.html>Alerts</a>
+        <a href = profile.html>Profile</a>
+        </div>
+    </div>
+
+    <div class = "container">
+
+    <form class = "profile" name = "profile">
+        
+    <div id = "personal-profile">
+        <h2>Personal Profile</h2><br>
+
+    <label for = "firstname">First Name</label> 
+    <label for = "MI"> M.I</label>
+    <input type = "text" id = "firstname" name = "firstname" required value = "First Name">
+    <input type = "text" id = "MI" name = "MI" required value = "M.I">
+
+    <label for = "lastname">Last Name</label><br>
+    <input type = "text" id = "lastname" name = "lastname" required value = "Last Name"><br><br>
+
+    <label for = "dob">Date of Birth</label><br>
+    <input type ="date" id = "dob" name = "dob" required><br><br>
+
+    <label for = "height">Height:</label><br>
+    <input type = "number" id = "feet" name = "height_feet" min = "0" max = "10" required> ft 
+    <input type = "number" id = "inches" name = "height_inches" min = "0" max = "11" required> in
+    
+    <label for = "start-weight">Start Weight:</label><br>
+    <input type = "number" id = "start-weight" name = "start_weight" required> lbs<br><br>
+
+    <label for = "bmi">BMI: </label>
+    <input type = "text" id = "bmi" name = "bmi" readonly>
+
+    <label for = "surgeryinfo">Surgery Date:</label>
+    <input type = "datetime-local" id = "surgery-date" name = "surgery_date">
+
+    <label for = "surgeryinfo">Surgery Type:</label>
+    <input list = "surgerytype" id = "surgery-type" name = "surgery_type">
+        <datalist id = "surgerytype">
+            <option value = 1>1</option>
+            <option value = 2>2</option>
+            <option value = 3>3</option>
+            <option value = 4>4</option>        
+        </datalist>
+
+    <label for = "emergency-contact"><b>Emergency Contact Information:</b></label><br>
+    <label for = "e-name">Name<br></label><input type = "text" id = "e-name" name = "e_name" required>
+    <label for = "phone">Phone Number<br></label><input type = "number" id = "phone" name = "phone" required>
+    <label for = "relationship">Relationship</label><input list = "relationship" required>
+    <datalist id = "relationship">
+        <option value = "Parent/Guardian"></option>
+        <option value = "Spouse"></option>
+        <option value = "Child"></option>
+        <option value = "Sibling"></option>
+        <option value = "Friend"></option>
+    </datalist>
+
+    <button>Submit</button>
+</div>
+</form>
+</div>
+
+<script type = "module" src = "profile.js"></script>
+</body>
+</html>

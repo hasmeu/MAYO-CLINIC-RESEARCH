@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HealthKit Dashboard</title>
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <!-- Replace with your logo -->
+        <img src="assets/images/logo.png" alt="Dashboard Logo">
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="http://localhost:3000/">Home</a></li>
+          <li><a href="http://localhost:3000/dashboard">Dashboard</a></li>
+          <li><a href="#">Workouts</a></li>
+          <li><a href="http://localhost:5000/">Calories Burned App</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <link rel="stylesheet" type = "text/css" href="css/consistency_styles.css"/>
+  <div class="dashboard-row">
+    <div class="containers" id="user-info">
+      <h1>HealthKit Dashboard</h1>
+      <div class="metric">
+        <span class="metric-title">Weight:</span>
+        <span class="value" id="weight">400</span>
+      </div>
+      <div class="metric">
+        <span class="metric-title">BMI:</span>
+        <span class="value" id="bmi">28</span>
+      </div>
+
+      <div class="metric">
+        <span class="metric-title">Daily Caloric Intake:</span>
+        <span class="value" id="calories">2800</span>
+      </div>
+    </div>
+  
+    <div class="containers chart-container">
+      <h2>Weight Progress Over Time</h2>
+      <canvas id="weightChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+  <!--second row-->
+  <div class="dashboard-row">
+    
+    <div class="containers chart-container">
+      <h2>Exercise Consistency</h2>
+      <canvas id="consistencyChart" width="400" height="200"></canvas>
+    
+    </div>
+  
+    <div class="containers chart-container">
+      <h2>Emotional Well-Being</h2>
+      <canvas id="emotionalChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <script src="js/weight_chart.js"></script>
+  <script src="js/consistency_chart.js"></script>
+  <script src="js/emotional_chart.js"></script>
+</body>
+</html>

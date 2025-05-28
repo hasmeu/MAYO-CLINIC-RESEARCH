@@ -1,0 +1,76 @@
+
+<html>
+    <title>Emotional Health & Tracking</title>
+    <head>
+      <meta charset="UTF-8">
+      <link rel = "stylesheet" href= "css/nutrition.css">
+      <link rel = "stylesheet" href= "css/navbar.css">
+      <script type="text/JavaScript" src="js/mentalhealth.js" defer></script>
+    </head>
+
+    <body>
+        <body>
+          <nav class="topnav">
+            <a href="">Bariatric Patient Project</a>
+          
+            <ul class="topnav-right">
+              <li><a href="alerts.html">Alerts</a></li>
+              <li><a href="profile.html">Profile</a></li>
+            </ul>
+          </nav>
+            <h1>Mood Log</h1>
+            <form id="moodForm">
+              <div class="mood-entry">
+                <label for="emotion">Select Emotion</label>
+                <select id="emotion" name="emotion">
+                  <option value="">--Choose Emotion--</option>
+                </select>
+              </div>
+              <div class="mood-entry">
+                <label for="intensity">Intensity (1–10)</label>
+                <p>
+                    1:The worst mental and emotional distress ever. <br>
+                    2:You're at a critical point, not able to function. <br>
+                    3:You can't hide your struggles anymore. <br>
+                    4:You're avoing things that make you more distressed. <br>
+                    5:You can't dp thimgs the way you usually do them due to your mental health. <br>
+                    6:Your mental health is starting to impact your everyday life. <br>
+                    7:Today is a bad day, but you still have the skills to get through it. <br>
+                    8:THings are bothering you, but you're coping. <br>
+                    9:You're a bit frustrated or dissapointed but can be cheered up with little effort <br>
+                    10: Everything is a-okay, nothing is wrong.
+
+                </p>
+                <input type="range" id="intensity" name="intensity" min="1" max="10" value="5">
+              </div>
+              <button type="submit">Log Mood</button>
+            </form>
+
+
+            <nav>
+              <button id="showJournal">Journal</button>
+            </nav>
+              
+              <section id="moodSection">
+                <!-- Existing mood log form and chart go here -->
+              </section>
+              <section id="journalSection" style="display:none;">
+                <h2>Journal</h2>
+                <textarea id="journalInput" rows="5" placeholder="Write your thoughts..."></textarea>
+                <button id="logJournal">Save Journal</button>
+                <div id="journalEntries"></div>
+              </section>
+              
+                <canvas id="moodChart"></canvas>
+
+
+            
+          
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="script.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          
+        </body>
+         
+    </body>
+</html>
