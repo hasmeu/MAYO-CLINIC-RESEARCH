@@ -116,12 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
             stepSize: 1
           }
         },
-        x: {
-          title: {
-            display: true, 
-            text: 'Day of Week'
-          }
-        }
+        
       },
       plugins: {
         tooltip: {
