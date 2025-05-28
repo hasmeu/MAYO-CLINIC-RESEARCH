@@ -65,12 +65,7 @@ This project is a web portal for bariatric surgery patients that integrates heal
 
 ## Database Schema
 
-The database schema is defined in `db/schema.sql` and consists of two main tables:
-
-- **users:** Stores user account details.
-- **health_metrics:** Stores health data associated with each user (linked via `user_id`).
-
-Seed data is provided in `db/seed.sql` for initial testing and development.
+The database schema is defined in `db/schema.sql`.
 
 ## Development Workflow
 
